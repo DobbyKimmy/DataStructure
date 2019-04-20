@@ -80,5 +80,15 @@ public class LoopQueue<E> implements Queue<E> {
         stringBuilder.append("]Tail");
         return stringBuilder.toString();
     }
-
+    public static void main(String[]args){
+        LoopQueue<Integer> loopQueue = new LoopQueue<>();
+        for(int i=0;i<10;i++){
+            loopQueue.enqueue(i);
+            System.out.println(loopQueue);
+            if((i+2)%3==0){
+                loopQueue.dequeue();
+                System.out.println(loopQueue);
+            }
+        }
+    }
 }

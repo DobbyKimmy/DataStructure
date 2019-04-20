@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[]args){
         int testCount = 100000;
         ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
-        LoopQueue<Integer> loopQueue = new LoopQueue<>();
+        LoopQueueReview<Integer> loopQueue = new LoopQueueReview<>();
         double loopQueueTime = testQueue(loopQueue,testCount);
         double arrayQueueTime = testQueue(arrayQueue,testCount);
         System.out.println("LoopQueue:"+loopQueueTime);
